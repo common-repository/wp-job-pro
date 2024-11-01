@@ -1,0 +1,569 @@
+*, *:before, *:after{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+	}
+	
+@font-face {
+    font-family: 'robotomedium';
+    src: url('../fonts/roboto-medium/roboto-medium-webfont.eot');
+    src: url('../fonts/roboto-medium/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-medium/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/roboto-medium/roboto-medium-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-medium/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenSansSemibold';
+    src: url('../fonts/open_sans_semibold/OpenSansSemibold.eot');
+    src: url('../fonts/open_sans_semibold/OpenSansSemibold.eot') format('embedded-opentype'),
+         url('../fonts/open_sans_semibold/OpenSansSemibold.woff2') format('woff2'),
+         url('../fonts/open_sans_semibold/OpenSansSemibold.woff') format('woff'),
+         url('../fonts/open_sans_semibold/OpenSansSemibold.ttf') format('truetype'),
+         url('../fonts/open_sans_semibold/OpenSansSemibold.svg#OpenSansSemibold') format('svg');
+}
+
+
+@font-face{
+    font-family:source_sans_proregular;
+    src:url(../fonts/sourcesans/sourcesanspro-regular-webfont.eot);
+    src:url(../fonts/sourcesans/sourcesanspro-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/sourcesans/sourcesanspro-regular-webfont.woff) format('woff'), url(../fonts/sourcesans/sourcesanspro-regular-webfont.ttf) format('truetype'), url(../fonts/sourcesans/sourcesanspro-regular-webfont.svg#source_sans_proregular) format('svg');
+    font-weight:400;
+    font-style:normal;
+	}
+	
+.clearfix{zoom:1;}
+.clearfix:after, .clearfix:before{content:""; display:table;}
+.clearfix:after{clear:both}
+
+/*a{outline:none; border:none;}*/
+
+.icjm_custom_search{
+	background:#EFF0F2;
+	border:1px solid #D6D6D6;
+	box-shadow:1px 1px 2px #E3E3E3;
+	margin-bottom:20px;
+	padding:7px 10px 15px;
+	}
+
+.icjm_row{margin-left:-10px; margin-right:-10px;}
+.icjm_row:after, .icjm_row:before{content:""; display:table;}
+.icjm_row:after{clear:both}
+
+.icjm_custom_search .icjm_formrow{
+	float:left;
+	width:33.33%;
+	margin-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	}
+
+.icjm_label_text label{
+	color:#111;
+	font-size:14px;
+	display:block;
+	padding:0px 15px 3px 0;
+	
+	/*font-family:source_sans_proregular;
+	font-weight:400;
+    font-style:normal;*/
+	}
+	
+.icjm_custom_search .icjm_select_text select{width:100%;}
+
+.icjm_custom_search .icjm_select_text select{
+	display: block;
+	width: 100%;
+	height: 30px;
+	padding: 4px 10px;
+	/*font-size: 14px;*/
+	line-height: 1.42857143;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+		  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		  
+	/*font-family:source_sans_proregular;
+	font-weight:400;
+    font-style:normal;*/
+}
+
+
+/* Job Frontend Buttons =========================== */
+.icjm_submit_btn{
+	text-align:center; 
+	margin-top:5px;
+}
+
+.icjm_submit_btn .icjm_btn{
+	/*background:#2289C4;
+	color:#FFF;*/
+	/*font-size:16px;
+	font-family:source_sans_proregular;
+	font-weight:400;
+    font-style:normal;*/
+	text-align: center;
+	text-shadow:none;
+	box-shadow:none;
+	height:auto;
+	border: none;
+	border-radius: 3px;
+	padding: 4px 13px !important;
+	border-bottom: 3px solid rgba(0,0,0,0.2) !important;
+	/*transition: all .2s ease-in-out;*/
+	}
+
+.icjm_submit_btn .icjm_btn:hover,
+.icjm_submit_btn .icjm_btn:focus{
+	/*background:#1876AC;*/
+	border:none;
+	text-shadow:none;
+	/*transition: all .2s ease-in-out;*/
+}
+
+.icjm_submit_btn .btn_cancel{
+	background: #D4D0C8;
+	color: #3e3f3a !important;
+	margin-left:5px;
+}
+.icjm_submit_btn .btn_cancel:hover,
+.icjm_submit_btn .btn_cancel:focus{
+	background: #BEBDBC;
+	color: #3e3f3a;
+}
+
+
+/* Job Table --------------------------------------- */
+.table-responsive {
+	min-height: .01%;
+	overflow-x: auto;
+}
+
+.icjm_job-listing .icjm_table{
+	background:#FFF;
+	border: 1px solid #D6D6D6;
+	box-shadow:1px 1px 2px #E3E3E3;
+	margin:0px auto 10px auto;
+	
+	word-wrap:normal;
+	hyphens: none
+	}
+	
+.icjm_job-listing table td{vertical-align:top;}
+
+/*.icjm_job-listing > .icjm_table >  tbody > tr > td .fa{margin-right:8px;}
+.icjm_job-listing > .icjm_table >  tbody > tr > td .fa-map-marker{color:#27a2f8;}*/
+
+.icjm_job-listing > .icjm_table >  tbody > tr > td .icjm_freelance{color:#3b7b5a; font-size:15px;}
+.icjm_job-listing > .icjm_table >  tbody > tr > td .icjm_fulltime{color:#9c3330; font-size:15px;}
+.icjm_job-listing > .icjm_table >  tbody > tr > td .icjm_parttime{color:#395c70; font-size:15px;}
+.icjm_job-listing > .icjm_table >  tbody > tr > td .icjm_internship{color:#b09754; font-size:15px;}
+.icjm_job-listing > .icjm_table >  tbody > tr > td .icjm_time{color: #A0A0A0; font-size:13px;}
+
+/*.job-logo{
+	width:50px;
+	height:50px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	}*/
+	
+.icjm_job-listing .icjm_table td.icjm_job_title h3{
+	/*width:30%;*/ 
+	font-family: 'robotomedium';
+	font-weight: normal;
+    font-style: normal;
+	
+	margin:0 0 2px 0 !important;
+	padding:0 !important;
+	/*color:#4B97D6;*/
+	font-size:16px;
+	}
+	
+.icjm_job-listing .icjm_company{
+	margin:0;
+	color:#797979;
+	font-size:13px;
+	}
+	
+.icjm_job-listing > .icjm_table >  tbody > tr > td a{
+	/*font-size:15px;
+	color:#4B97D6;
+	text-decoration:none;
+	box-shadow:none;*/
+}
+.icjm_job-listing > .icjm_table >  tbody > tr > td a:hover,
+.icjm_job-listing > .icjm_table >  tbody > tr > td a:focus{/*color:#2D72AB;*/}
+	
+.icjm_job-listing > .icjm_table >  thead > tr > th,
+.icjm_job-listing > .icjm_table >  tbody > tr > td{
+	/*font-family:source_sans_proregular;
+	font-weight:400;
+    font-style:normal;*/
+	text-align:left;
+	
+	padding:10px 10px;
+	vertical-align:middle;
+	/*font-size:14px;*/
+	}
+	
+.icjm_job-listing > .icjm_table >  thead > tr > th{color:#444;}
+	
+.icjm_job-listing > .icjm_table > thead > tr > th,
+.icjm_job-listing > .icjm_table > tbody > tr > td{border:none;}
+	
+/*.icjm_job-listing > .icjm_table > tbody > tr:hover > td{background:#F2F2F2;}*/
+	
+/*.icjm_job-listing > .icjm_table-striped > tbody > tr:nth-of-type(odd){background-color:#fff;}
+.icjm_job-listing > .icjm_table-striped > tbody > tr:nth-of-type(even){background-color:#F5F9FF;}*/
+	
+.icjm_job-listing thead tr th:last-child,
+.icjm_job-listing tbody tr td:last-child{text-align:right;}
+
+
+.icjm_job_front_section .pagination{
+	border:none;
+	border-radius:0;
+	margin:10px 0 0 0;
+	float:right;
+	
+	/*font-size:16px;
+	font-family:source_sans_proregular;
+	font-weight:400;
+    font-style:normal;*/
+}
+
+.icjm_job_front_section .pagination:before,
+.icjm_job_front_section .pagination:after{
+	background:none;
+	height:auto;
+	margin:0;
+	position:relative;
+	top:0;
+	width:auto;
+}
+
+.icjm_job_front_section .pagination .disabled{
+	background:none;
+	padding:2px 5px;
+	margin-right:4px;
+	/*border:1px solid #ccc;
+	color:#ccc;*/
+	border:1px solid;
+	/*box-shadow:none;
+	-webkit-cursor:no-drop;
+		 -o-cursor:no-drop;
+		-ms-cursor:no-drop;
+	   -moz-cursor:no-drop;
+			cursor:no-drop;*/
+}
+
+.icjm_job_front_section .pagination a{
+	/*background:none;
+	color:#1876AC;*/
+	padding:2px 5px;
+	margin-right:4px;
+	/*border:1px solid #1876AC;*/
+	border:1px solid;
+	box-shadow:none;
+	text-decoration:none;
+}
+.icjm_job_front_section .pagination a:hover,
+.icjm_job_front_section .pagination a:focus{
+	text-decoration:none;
+	/*border:1px solid #1876AC;*/
+	border:1px solid;
+}
+.icjm_job_front_section .pagination a:last-child{margin-right:0;}
+
+.icjm_job_front_section .pagination .current{
+	padding:2px 5px;
+	margin-right:4px;
+	/*border:1px solid #1876AC;*/
+	border:1px solid;
+	/*background:#1876AC;
+	color:#FFF;*/
+	box-shadow:none;
+	
+	display:inline;
+	font-family:source_sans_proregular;
+	font-weight:400;
+    font-style:normal;
+}
+
+
+/*************************************************
+	Job Details
+**************************************************/
+
+.icjm_job_details .search-heading{
+	/*font-family: 'robotomedium';*/
+	padding:10px 15px;
+	/*font-size: 16px;
+	text-shadow: 1px 1px 0 #fff;
+	background:#F5F5F5;
+	border-bottom:4px solid #2289C4;
+	height:49px;*/
+	border-bottom:1px solid;
+	}
+
+.icjm_job_details .search-heading h4{
+	/*padding-top: 12px;
+	display: inline-block;*/
+	margin:0;
+}
+
+.icjm_job_details .apply{
+	margin:10px 0 0 0;
+	text-align:left !important;
+}
+
+.icjm_job_details .custom-search{
+	/*border: 1px solid #CACACA;
+	box-shadow: 2px 2px 3px #ccc;
+	background:#FFF;*/
+	border:1px solid #ccc;
+	/*box-shadow: 2px 2px 3px;*/
+	}
+
+.icjm_job_details .content .job_details_content:before,
+.icjm_job_details .content .job_details_content:after,
+.icjm_job_details .content:before,
+.icjm_job_details .content:after{
+	display:table;
+	content:"";
+	}
+.icjm_job_details .content .job_details_content:after,
+.icjm_job_details .content:after{clear:both;}
+
+.icjm_job_details .content{padding:15px;}
+
+.icjm_job_details .content .job_details_content{margin-bottom:10px;}
+.icjm_job_details .content .job_details_content:last-child{margin-bottom:0;}
+
+.icjm_job_details .content .job_details_content strong{
+	width:20%;
+	float:left;
+	color:#000;
+	/*font-size:14px;
+	font-family: 'OpenSansSemibold';
+	font-weight:normal;*/
+}
+.icjm_job_details .content .job_details_content span{
+	width:80%;
+	float:left;
+	color:#444;
+	/*font-size:14px;
+	font-family:source_sans_proregular;
+	font-weight:400;
+    font-style:normal;*/
+}
+
+/*************************************************
+	Job Details Popup
+**************************************************/
+
+.icjm_job_details .popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+	z-index:100;
+    background:rgba(0,0,0,0.75);
+}
+
+.icjm_job_details .popup-inner h3{
+	/*font-family: 'robotomedium';
+	color:#2289C4;*/
+	margin: 0 0 20px 0;
+	line-height: 15px;
+	/*font-size:22px;*/
+	}
+	
+.icjm_job_details .popup-inner .alert{
+	font-family:source_sans_proregular;
+	font-weight:400;
+    font-style:normal;
+	font-size:14px;
+	}
+
+.icjm_job_details .popup-inner {
+    background:#fff;
+	max-width:600px;
+	width:100%;
+	border-radius:3px;
+    padding:15px;	
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+}
+ 
+/* Close Button */
+.icjm_job_details .popup-close {	
+	position: absolute;
+	top: -15px;
+	right: -15px;
+	width: 30px;
+	height: 30px;
+	background: transparent url('../images/fancybox.png') -40px 0px;
+	cursor: pointer;
+	z-index: 1103;
+}
+
+/* Popup Form ============================= */
+
+.icjm_job_details .form-group:before,
+.icjm_job_details .form-group:after{
+	display:table;
+	content:"";
+}
+.icjm_job_details .form-group:after{clear:both;}
+
+.icjm_job_details .form-group{margin-bottom:15px;}
+
+.icjm_job_details .popup-inner .icjm_submit_btn{text-align:right;}
+
+.icjm_job_details .form-group label{
+	/*font-family: 'OpenSansSemibold';
+	font-weight:normal;*/
+	width:30%;
+	float:left;
+	/*color:#444;
+	font-size:14px;*/
+}
+
+.icjm_job_details .form-group .input_box{
+	width:70%;
+	float:right;
+}
+
+.icjm_job_details .form-group textarea.control-label{
+	height:100px;
+	resize:none;
+}
+
+.icjm_job_details .form-group .control-label{
+	display: block;
+	width: 100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background: #fff;
+	background-image: none;
+	border: 1px solid;
+	border-radius: 4px;
+	box-shadow:none;
+	-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	   -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	}
+	
+.icjm_job_details .form-group .control-label:focus{
+	border:1px solid !important;
+	box-shadow:none;
+}
+
+.icjm_job_details .form-group .error_message{
+	border:1px solid red !important;
+}
+
+.icjm_job_details .form-group .icjm_submit_btn{
+	text-align:right;
+}
+
+/* Popup Error Message ============================= */
+
+.icjm_job_details .alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 18px;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  color: #c09853;
+}
+.icjm_job_details .alert-success {
+	background-color: #dff0d8;
+	border-color: #d6e9c6;
+	color: #468847;
+}
+.icjm_job_details .alert-danger,
+.icjm_job_details .alert-error {
+	background-color: #f2dede;
+	border-color: #eed3d7;
+	color: #b94a48;
+}
+.icjm_job_details .alert-info {
+	background-color: #d9edf7;
+	border-color: #bce8f1;
+	color: #3a87ad;
+}
+
+/*************************************************
+	Media Query's
+**************************************************/
+
+@media screen and (max-width: 767px) {
+	.table-responsive > .table {
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 600px) {
+	.icjm_job_details .popup-close {
+		right: -8px;
+	}
+
+	.entry-content{
+		width:100%;
+	}
+	
+	.icjm_job_details .form-group .icjm_submit_btn{
+		text-align:center;
+	}
+	
+	.icjm_job_details .content .job_details_content strong,
+	.icjm_job_details .content .job_details_content span{
+		width:100%;
+		float:none;
+		display:block;
+		}
+}
+
+
+
+@media (max-width: 480px) {
+	.icjm_formrow{
+		width:100% !important;
+		float:none !important;
+	}
+	
+	.icjm_job_details .form-group label{width:100%; float:none;}
+	
+	.icjm_job_details .form-group .input_box{width:100%;}
+}
+
+
+
+
+
+
+

@@ -1,0 +1,220 @@
+*{margin:0; padding:0;}
+
+@font-face{
+    font-family:'robotomedium';
+    src:url('../fonts/roboto-medium/roboto-medium-webfont.eot');
+    src:url('../fonts/roboto-medium/roboto-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/roboto-medium/roboto-medium-webfont.woff2') format('woff2'),
+         url('../fonts/roboto-medium/roboto-medium-webfont.woff') format('woff'),
+         url('../fonts/roboto-medium/roboto-medium-webfont.ttf') format('truetype'),
+         url('../fonts/roboto-medium/roboto-medium-webfont.svg#robotomedium') format('svg');
+    font-weight:normal;
+    font-style:normal;
+	}
+
+@font-face{
+    font-family:source_sans_proregular;
+    src:url(../fonts/sourcesans/sourcesanspro-regular-webfont.eot);
+    src:url(../fonts/sourcesans/sourcesanspro-regular-webfont.eot?#iefix) format('embedded-opentype'), url(../fonts/sourcesans/sourcesanspro-regular-webfont.woff) format('woff'), url(../fonts/sourcesans/sourcesanspro-regular-webfont.ttf) format('truetype'), url(../fonts/sourcesans/sourcesanspro-regular-webfont.svg#source_sans_proregular) format('svg');
+    font-weight:400;
+    font-style:normal
+	}
+
+img{
+	display:inline-block; 
+	height:auto;
+	max-width:100%;
+	}
+	
+body{
+	font-family:source_sans_proregular, Arial;
+	font-size:14px;
+	background:#f1f1f1;
+	}
+	
+/* Custom Search --------------------------------------- */
+.search-heading{
+	font-family:'robotomedium';
+	padding:10px 15px;
+	font-size:16px;
+	text-shadow:1px 1px 0 #fff;
+	background:#F5F5F5;
+	border-bottom:4px solid #2289C4;
+	}
+
+.custom-search{
+	width:1055px;
+	border:1px solid #CACACA;
+	box-shadow:2px 2px 3px #ccc;
+	background:#FFF;
+	margin-top:20px;
+	}
+
+.content:before, 
+.content:after{
+	display:table;
+	content:"";
+	}
+	
+.content:after{	
+	clear:both;
+	}
+
+.content{margin:20px 0px;}
+
+.label-text label{
+	font-family:'robotomedium';
+	font-weight:normal;
+    font-size:15px;
+	float:left;
+	padding:7px 15px 0 0;
+	}
+
+.custom-search .FormRow{
+    float:left;
+    width:185px;
+	margin-bottom:20px;
+	}
+
+.custom-search .FirstRow{margin-right:10px;}
+
+.custom-search .select-text select{
+    padding:8px;
+	width:100%;
+	}
+
+.submit-button{float:left; margin-top:29px;}
+
+.submitbtn{
+	background:#268BC3;
+	padding:8px 15px;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	text-decoration:none;
+	outline:none;
+	border:none;
+	border-radius:15px;
+	}
+
+.submitbtn:hover{
+	background:#1A78AE;
+	text-decoration:none;
+	}
+
+/* Job Table --------------------------------------- */
+
+.job-listing-table table.table{
+	background:#FFF;
+	border:1px solid #CACACA;
+	box-shadow:2px 2px 3px #ccc;
+	margin:30px auto 0 auto;
+	}
+	
+.job-listing-table > .table >  tbody > tr > td.job-title{width:66%;}
+
+.job-listing-table > .table >  tbody > tr > td.job-position{width:12%;}
+
+.job-listing-table > .table >  tbody > tr > td.job-location{width:12%;}
+
+.job-listing-table > .table >  tbody > tr > td.job-type{width:10%;}
+
+.job-listing-table > .table >  tbody > tr > td .fa{margin-right:8px;}
+
+.job-listing-table > .table >  tbody > tr > td .fa-map-marker{color:#27a2f8;}
+
+.job-listing-table > .table >  tbody > tr > td .freelance{color:#3b7b5a; font-size:15px;}
+
+.job-listing-table > .table >  tbody > tr > td .full-time{color:#9c3330; font-size:15px;}
+
+.job-listing-table > .table >  tbody > tr > td .part-time{color:#395c70; font-size:15px;}
+
+.job-listing-table > .table >  tbody > tr > td .internship{color:#b09754; font-size:15px;}
+
+.job-listing-table > .table >  tbody > tr > td .time{color:#A0A0A0; font-size:13px;}
+
+/*.job-logo{
+	width:50px;
+	height:50px;
+	
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	}*/
+
+.job-listing-table h3{
+	font-family:'robotomedium';
+	margin:0 0 2px 0;
+	color:#4B97D6;
+	font-size:18px;
+	}
+	
+.job-listing-table .company{
+	margin:0;
+	color:#9c3330;
+	font-size:13px;
+	}
+	
+.job-listing-table > .table >  thead > tr > th,
+.job-listing-table > .table >  tbody > tr > td{
+	padding:12px;
+	vertical-align:middle;
+	}
+	
+.job-listing-table > .table > thead > tr > th,
+.job-listing-table > .table > tbody > tr > td{border:none;}
+	
+.job-listing-table > .table > tbody > tr:hover > td{background:#F2F2F2;}
+	
+.job-listing-table > .table-striped > tbody > tr:nth-of-type(odd){
+  	background-color:#F6F6F6;
+	}
+	
+.job-listing-table thead tr th:last-child,
+.job-listing-table tbody tr td:last-child{text-align:right;}
+
+/* Pagination --------------------------------------- */
+
+.pagination{
+    padding:5px;
+    margin:3px;
+    margin-top:10px;
+    text-align:right;
+    margin-right:0;
+    float:right;
+	}
+
+div.pagination a.disabled{
+    padding:2px 5px 2px 5px;
+    margin:2px;
+    border:1px solid #C6C4C4;
+    color:#C6C4C4;
+	}
+
+.pagination a.current{
+    padding:2px 5px 2px 5px;
+    margin:2px;
+    border:1px solid #77AEDB;
+    background:#77AEDB;
+    font-weight:bold;
+    color:#FFF;
+	}
+	
+.pagination a.current:hover,
+.pagination a.current:focus{
+	color:#FFF;
+	}
+
+.pagination a{
+    padding:2px 5px 2px 5px;
+    margin:2px 2px 5px 2px;
+    border:1px solid #77AEDB;
+    text-decoration:none;
+    color:#999;
+    cursor:pointer;
+    display:block;
+    float:left;
+	}
+
+.pagination a:hover{color:#000;}
+
